@@ -7,7 +7,16 @@ export default class MovieCardList extends Component {
     return (
       <div className={style.main}>
         {this.props.movies.map((movie, index) => {
-          return <Movies key={index} image={movie.poster_path} />;
+          return (
+            <Movies
+              key={index}
+              image={movie.poster_path}
+              title={movie.title}
+              release={movie.release_date}
+              rate={movie.vote_average}
+              description={movie.overview}
+            />
+          );
         })}
       </div>
     );
