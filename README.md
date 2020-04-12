@@ -1,3 +1,9 @@
+## MovieApp
+
+This project is still in process.
+
+Modern fast movie database web app with React using The Movie DB API. All the new popular movies are populated along with search bar for your own movie search. Clicking on specific movies bring you all data about the movie.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
