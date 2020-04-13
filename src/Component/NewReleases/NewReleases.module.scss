@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  justify-content: center;
+}
+.main {
+  margin-top: 50px;
+  height: 400px;
+  width: 70%;
+  border: 5px solid black;
+}
+img {
+  width: 30%;
+  height: 100%;
+  float: left;
+}
+a {
+  color: white;
+  text-decoration: none;
+}

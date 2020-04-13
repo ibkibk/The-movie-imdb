@@ -6,9 +6,10 @@ export default class NavBar extends Component {
   render() {
     return (
       <div className={style.top}>
-        <NavItems route="/watchlist" name="WatchList" />
-        <NavItems route="/top100" name="IMBD TOP 100" />
-        <NavItems route="/newestreleases" name="NEWEST RELEASES" />
+        <NavItems route="home" name="Home" />
+        <NavItems route="watchlist" name="WatchList" />
+        <NavItems route="top100" name="IMBD TOP 100" />
+        <NavItems route="newestreleases" name="NewReleases" />
       </div>
     );
   }

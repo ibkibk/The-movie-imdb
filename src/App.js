@@ -11,7 +11,7 @@ function App() {
     <div className="App">
       <Header />
       <NavBar />
-      <MovieCard />
+      {/* <MovieCard /> */}
       <Routes />
     </div>
   );
