@@ -8,7 +8,7 @@ export default class MovieCard extends Component {
     movies: [],
     searchMovie: "",
   };
-
+  // const apikey = bd5089d1480da148e597cd682d9970a4;
   handleSubmit = (e) => {
     e.preventDefault();
     fetch(
@@ -23,8 +23,6 @@ export default class MovieCard extends Component {
   handleChange = (e) => {
     this.setState({ searchMovie: e.target.value });
   };
-
-  // const apikey = bd5089d1480da148e597cd682d9970a4;
 
   render() {
     return (

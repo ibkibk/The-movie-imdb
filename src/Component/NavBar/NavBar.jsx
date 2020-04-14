@@ -8,8 +8,8 @@ export default class NavBar extends Component {
       <div className={style.top}>
         <NavItems route="home" name="Home" />
         <NavItems route="watchlist" name="WatchList" />
-        <NavItems route="top100" name="IMBD TOP 100" />
-        <NavItems route="newestreleases" name="NewReleases" />
+        {/* <NavItems route="top100" name="IMBD TOP 100" /> */}
+        <NavItems route="newestreleases" name="IMDB TOP 10" />
       </div>
     );
   }
