@@ -8,12 +8,13 @@ export default class MovieCard extends Component {
     movies: [],
     searchMovie: "",
   };
-  // const apikey = bd5089d1480da148e597cd682d9970a4;
+
   handleSubmit = (e) => {
     e.preventDefault();
+
     if (this.state.searchMovie) {
       fetch(
-        `https://api.themoviedb.org/3/search/movie?api_key=bd5089d1480da148e597cd682d9970a4&query=${this.state.searchMovie}`
+        `https://api.themoviedb.org/3/search/movie?api_key={API_KEY}&query=${this.state.searchMovie}`
       )
         .then((data) => data.json())
         .then((data) => {
