@@ -11,14 +11,16 @@ export default class MovieCard extends Component {
   // const apikey = bd5089d1480da148e597cd682d9970a4;
   handleSubmit = (e) => {
     e.preventDefault();
-    fetch(
-      `https://api.themoviedb.org/3/search/movie?api_key=bd5089d1480da148e597cd682d9970a4&query=${this.state.searchMovie}`
-    )
-      .then((data) => data.json())
-      .then((data) => {
-        console.log(data);
-        this.setState({ movies: [...data.results] });
-      });
+    if (this.state.searchMovie) {
+      fetch(
+        `https://api.themoviedb.org/3/search/movie?api_key=bd5089d1480da148e597cd682d9970a4&query=${this.state.searchMovie}`
+      )
+        .then((data) => data.json())
+        .then((data) => {
+          console.log(data);
+          this.setState({ movies: [...data.results] });
+        });
+    } else return;
   };
   handleChange = (e) => {
     this.setState({ searchMovie: e.target.value });
