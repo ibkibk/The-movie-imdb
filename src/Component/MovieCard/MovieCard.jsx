@@ -11,10 +11,10 @@ export default class MovieCard extends Component {
 
   handleSubmit = (e) => {
     e.preventDefault();
-
+    const API_KEY = "REACT_APP_API_KEY";
     if (this.state.searchMovie) {
       fetch(
-        `https://api.themoviedb.org/3/search/movie?api_key={API_KEY}&query=${this.state.searchMovie}`
+        `https://api.themoviedb.org/3/search/movie?api_key=${API_KEY}&query=${this.state.searchMovie}`
       )
         .then((data) => data.json())
         .then((data) => {
