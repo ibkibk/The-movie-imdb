@@ -21,9 +21,6 @@ export default class Top extends Component {
   }
   render() {
     return (
-      // <>
-      //   <ReleaseCard />
-      // </>
       <>
         {this.state.users.map((user, index) => (
           <Top10 users={user} key={index} />
